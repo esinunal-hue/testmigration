@@ -16,7 +16,7 @@ jobs:
           profile-id: 'b82f6873-8878-47dd-146a-ae7701ff94c8'
           user-id: ${{ secrets.NETSPARKER_USER_ID }}
           api-token: ${{ secrets.NETSPARKER_API_TOKEN }}
-          base-url: 'https://www.netsparkercloud.com'
+          base-url: 'http://ec2-18-185-91-247.eu-central-1.compute.amazonaws.com/'
           fail-on-level: 'DoNotFail'
           wait-for-completion: false
       # Displays output for action
