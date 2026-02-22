@@ -13,6 +13,7 @@ jobs:
         with:
           website-id: 'ea817066-74d2-4747-0026-b3f8037cb4f7'
           scan-type: 'FullWithPrimaryProfile'
+          profile-id: '032c36e6-ed9d-4f86-18c0-b3f90472e04a'
           user-id: ${{ secrets.NETSPARKER_USER_ID }}
           api-token: ${{ secrets.NETSPARKER_API_TOKEN }}
           base-url: 'http://ec2-18-185-91-247.eu-central-1.compute.amazonaws.com/'
