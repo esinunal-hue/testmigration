@@ -12,7 +12,7 @@ jobs:
         id: netsparker-enterprise-scan-step
         with:
           website-id: 'ea817066-74d2-4747-0026-b3f8037cb4f7'
-          scan-type: 'Retest'
+          scan-type: 'Incremental'
           profile-id: '891c0975-35b4-4f79-10a6-b3f80479a001'
           user-id: ${{ secrets.NETSPARKER_USER_ID }}
           api-token: ${{ secrets.NETSPARKER_API_TOKEN }}
