@@ -12,8 +12,7 @@ jobs:
         id: netsparker-enterprise-scan-step
         with:
           website-id: 'ea817066-74d2-4747-0026-b3f8037cb4f7'
-          scan-type: 'Incremental'
-          profile-id: '6735e237-26e8-442a-00e7-b3f8039170a2'
+          scan-type: 'FullWithPrimaryProfile'
           user-id: ${{ secrets.NETSPARKER_USER_ID }}
           api-token: ${{ secrets.NETSPARKER_API_TOKEN }}
           base-url: 'http://ec2-18-185-91-247.eu-central-1.compute.amazonaws.com/'
