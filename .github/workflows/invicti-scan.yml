@@ -11,9 +11,9 @@ jobs:
         uses: serhatates/Netsparker-Cloud-GitHub-Actions@v1.0.4
         id: netsparker-enterprise-scan-step
         with:
-          website-id: 'd1f1bd38-a57d-4fd6-03a1-ae4402903792'
+          website-id: 'ea817066-74d2-4747-0026-b3f8037cb4f7'
           scan-type: 'Incremental'
-          profile-id: 'b82f6873-8878-47dd-146a-ae7701ff94c8'
+          profile-id: '6735e237-26e8-442a-00e7-b3f8039170a2'
           user-id: ${{ secrets.NETSPARKER_USER_ID }}
           api-token: ${{ secrets.NETSPARKER_API_TOKEN }}
           base-url: 'http://ec2-18-185-91-247.eu-central-1.compute.amazonaws.com/'
