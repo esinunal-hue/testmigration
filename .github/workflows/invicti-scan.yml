@@ -1,0 +1,24 @@
+name: Netspaker Enterprise Scan Sample Workflow
+on:
+  push:
+    branches: [ main ]
+jobs:
+  netspaker_scan_job:
+    runs-on: ubuntu-latest
+    steps:
+      # Starts actions with given inputs
+      - name: Start Netsparker Enterprise Scan
+        uses: serhatates/Netsparker-Cloud-GitHub-Actions@v1.0.4
+        id: netsparker-enterprise-scan-step
+        with:
+          website-id: 'd1f1bd38-a57d-4fd6-03a1-ae4402903792'
+          scan-type: 'Incremental'
+          profile-id: 'b82f6873-8878-47dd-146a-ae7701ff94c8'
+          user-id: ${{ secrets.NETSPARKER_USER_ID }}
+          api-token: ${{ secrets.NETSPARKER_API_TOKEN }}
+          base-url: 'https://www.netsparkercloud.com'
+          fail-on-level: 'DoNotFail'
+          wait-for-completion: false
+      # Displays output for action
+      - name: Display Scan Request Message
+        run: echo "${{ steps.netsparker-enterprise-scan-step.outputs.scan-message }}"
